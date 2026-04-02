@@ -1,0 +1,206 @@
+/************************************
+
+Website Name: HassanAliZiarati_midterm
+Website URL: W8Assignment.html
+Website Author: Hassan Ali Ziarati
+
+*************************************
+
+Typography Guide
+Font (Header, Body, Footer): OpenSans
+h1 Font Size: 38px
+h2 Font Size: 32px
+p Font Size: 18px
+
+*************************************
+
+Color Guide
+#0f172a (Background-Color) : Midnight
+#0b1220 (Form-Input-Boxes) : Blue Charcoal
+#e5e7eb (Body-Font-Family) : Platinum
+rgb(203, 76, 76) (Reset-Button) : Light Red
+rgb(87, 199, 160) (Submit-Button) : Light Green
+*************************************
+ 
+0.  CSS Reset
+1.  Font
+2.  Universla Styles
+3.  Body Styles
+4.  Form
+5.  Footer Styles
+
+*************************************
+
+0.  CSS Reset 
+    http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+
+************************************/
+
+/* 1. Font */
+@font-face {
+    font-family: "OpenSans";
+    src: url("../Fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: 100 900; 
+}
+
+/* 2. Universal Styles */
+body {
+    color: #e5e7eb;
+    background-color: #0f172a;
+    font-family: "OpenSans";
+}
+
+header, main, footer {
+    margin: 20px auto;
+    max-width: 960px;
+    min-width: 600px;
+    box-sizing: border-box;
+    
+}
+
+h1 {
+    padding: 20px;
+    font-size: 38px;
+    text-align: center;
+    margin: 20px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+    margin: 30px 0;
+    font-weight: 500;
+
+}
+
+main p {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    margin: 20px 20px;
+}
+
+/* 3. Body Styles */
+main article {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+main article img {
+    align-items: center;
+    border-radius: 7px;
+    display: block;
+    margin: 0 auto;
+}
+
+main article section figcaption {
+    margin: 5px 0px 5px 20px;
+    font-size: 12px;
+    color: #CECECE;
+}
+
+article section {
+    padding: 0px 20px;
+}
+
+/* 4. Form Styles */
+form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+label {
+    margin: 10px 10px 5px 10px;
+    display: block;
+    font-size: 17px;
+}
+
+input {
+    background-color: #0b1220;
+    color: #e5e7eb;
+    width: 90%;
+    display: block;
+    padding: 7px 0px;
+    margin-top:8px;
+    border-radius: 5px;
+}
+
+main section form section h2 {
+    margin: 10px 10px 15px 0px;
+    display: block;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: left;
+}
+
+main section form section label {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    align-items: center;
+    column-gap: 4px;
+    margin: 10px 10px 5px 0px;
+    line-height: 1.35;
+    font-size: 14px;
+    padding: 0px;
+}
+
+input[type="radio"] {
+    grid-column: 2;
+    margin-top: 5px;
+}
+
+main section form section:last-of-type {
+    background-color: #0b1220;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+input[type="reset"] {
+    font-size: 18px;
+    height: 20%;
+    margin: 30px 10px;
+    background-color: rgb(203, 76, 76);
+    color: #e5e7eb;
+}
+
+input[type="submit"] {
+    font-size: 18px;
+    height: 20%;
+    margin: 30px 10px;
+    background-color: rgb(87, 199, 160);
+    color: #e5e7eb;
+}
+
+input[type="reset"]:hover {
+    background-color: #0b1220;
+    color: rgb(203, 76, 76);
+    border: 1px solid #e5e7eb;
+}
+
+input[type="submit"]:hover {
+    background-color: #0b1220;
+    color: rgb(87, 199, 160);
+    border: 1px solid #e5e7eb;
+}
+
+/* 5. Footer Styles */
+footer {
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #CECECE;
+    border-radius: 10px;
+    padding: 12px 0;
+}
+ footer a{
+    color: #CECECE;
+    text-decoration: none;
+ }
+
+
+
